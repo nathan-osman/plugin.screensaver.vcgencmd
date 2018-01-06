@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="screensaver.plugin.vcgencmd" name="vcgencmd" version="0.1.0" provider-name="Nathan Osman">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0" />
+    </requires>
+    <extension point="xbmc.ui.screensaver" library="screensaver.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Screensaver that runs vcgencmd to enable DPMS</summary>
+        <license>MIT</license>
+        <source>http://github.com/nathan-osman/plugin.screensaver.vcgencmd</source>
+    </extension>
+</addon>
