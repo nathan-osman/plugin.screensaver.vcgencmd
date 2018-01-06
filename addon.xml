@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="screensaver.plugin.vcgencmd" name="vcgencmd" version="0.1.0" provider-name="Nathan Osman">
+<addon id="screensaver.plugin.vcgencmd" name="vcgencmd" version="0.1.1" provider-name="Nathan Osman">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
     </requires>

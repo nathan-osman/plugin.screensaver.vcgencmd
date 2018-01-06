@@ -25,20 +25,20 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         """
         Run the vcgencmd command to enable or disable the display
         """
-        subprocess.call('vcgencmd display_power {}'.format(enable), shell=True)
+        subprocess.call(['/opt/vc/bin/vcgencmd', 'display_power', enable])
 
     def onInit(self):
         """
         Enable power saving mode and monitor the screensaver
         """
         self._monitor = self.Monitor(self._exit)
-        self._run_vcgencmd(0)
+        self._run_vcgencmd('0')
 
     def _exit(self):
         """
         Deactivate power saving mode and close the window
         """
-        self._run_vcgencmd(1)
+        self._run_vcgencmd('1')
         self.close()
 
 
